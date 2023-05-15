@@ -13,6 +13,10 @@ class Marcadores {
     removerMarcador(id) {
         delete this.activos[id];
     }
+
+    actualizarMarcador(marcador) {
+        this.activos[marcador.id] = marcador;
+    }
 }
 
 module.exports = Marcadores;
